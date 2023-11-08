@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84be50fc-0ff8-41b4-8f05-81abae749b09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/datasets/purchase/prepare_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/purchase/prepare_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/distribution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datasets/purchase/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/datasets/purchase/dataloader.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

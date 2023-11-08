@@ -15,10 +15,13 @@ y_train = train_data['y'].astype(np.int64)
 y_test = test_data['y'].astype(np.int64)
 
 def load(indices, category='train'):
-    for i in range(0, indices.shape[0]):
-      if indices[i] >= X_train.shape[0]:
-        indices[i] = X_train.shape[0] - 1
     if category == 'train':
+        for i in range(0, indices.shape[0]):
+            if indices[i] >= X_train.shape[0]:
+                indices[i] = X_train.shape[0] - 1
         return X_train[indices], y_train[indices]
     elif category == 'test':
+        for i in range(0, indices.shape[0]):
+            if indices[i] >= X_test.shape[0]:
+                indices[i] = X_test.shape[0] - 1
         return X_test[indices], y_test[indices]

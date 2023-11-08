@@ -10,7 +10,7 @@ data = np.concatenate([load_npz('data1.npz').toarray(), load_npz('data2.npz').to
 num_class = 2
 
 if not os.path.exists(f'{num_class}_kmeans.npy'):
-    kmeans = KMeans(n_clusters=num_class, random_state=0).fit(data)
+    kmeans = KMeans(n_clusters=num_class, random_state=0, n_init=10).fit(data)
     label = kmeans.labels_
     np.save(f'{num_class}_kmeans.npy', label)
 else:

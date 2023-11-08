@@ -192,5 +192,5 @@ if args.requests != None:
         # Update requestfile.
         np.save(
             "containers/{}/requestfile:{}.npy".format(args.container, args.label),
-            np.array(requests),
+            np.array(requests, dtype=object),
         )
